@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-grey: #f5f6f7;
+    --dark-blue: #1b1b32;
+    --dark-grey: #3B3B4F;
+    --yellow: #f0ed38;
+    --orange: #f0c538;
+}
+
+body {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, .input-container {
+    color: var(--light-grey);
+    text-align: center;
+}
+
+#main-box {
+    background-color: var(--dark-grey);
+    border: 3px solid var(--light-grey);
+    width: 400px;
+    height: 250px;
+    display: flex;
+}
+
+.input-container {
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 350px;
+    height: 200px;
+}
+
+.input-container label {
+    margin: 13px 0 10px 0;
+    font-size: 1.8rem;
+}
+
+.input-container input {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: var(--dark-blue);
+    color: var(--light-grey)
+}
+
+.input-container button {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    background-color: var(--yellow);
+    border: 2px solid var(--orange);
+}
+
+.output-container {
+    background-color: var(--dark-grey);
+    border: 3px solid var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+    height: 80px;
+    margin-top: 50px;    
+}
+
+#output {
+    color: var(--light-grey);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+}
