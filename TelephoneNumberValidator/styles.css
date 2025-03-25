@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-grey: #DFDFE2;
+    --dark-grey: #3B3B4F;
+    --yellow: #f0ed38;
+    --orange: #f0c538;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: var(--white);
+    text-align: center;
+}
+
+#camera {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 145px;
+}
+
+
+#main-box {
+    margin-top: 50px;
+    background-color: var(--light-grey);
+    width: 280px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: solid var(--black);
+    border-width: 3em 1em;
+    border-radius: 25px;
+    font-size: 1.2rem;
+}
+ 
+label {
+    margin: auto;
+}
+
+/* form {
+    display: flex;
+    width: 230px;
+    margin: auto;
+    margin-top: 10px;
+    color: var(--black);
+    text-align: center;
+} */
+
+.number-input {
+    display: flex;
+    width: 230px;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#results-div {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    width: 230px;
+    height: 250px;
+}
+
+#results-div span{
+    margin: auto;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+#buttons {
+    position: absolute;
+    display: flex;
+    width: 230px;
+    height: 30px;
+    margin: auto;
+    margin-top: 575px;
+}
+
+.btns {
+    margin: auto;
+    width: 80px;
+    height: 30px;
+    font-size: 1.0rem;
+}
+
+
+
+
+
+
+
+
+
