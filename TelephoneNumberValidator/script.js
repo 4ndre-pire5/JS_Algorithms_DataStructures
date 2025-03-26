@@ -8,15 +8,21 @@ function checkBtn() {
     if (formEmpty()) {
         return;
     } else {
-        const stringInput = document.forms["form"]["number input"].value;
-
-                output.innerHTML = `
-            <span> TO DO: </br> ${stringInput} </span>
-        `
-
-
-        document.forms["form"]["number input"].value = "";
+        const stringInput = document.forms["form"]["number-input"].value;
+        testInfo(stringInput);
     }
+}
+
+function testInfo(userInput) {
+    const regex = /^1?\s?((\(\d{3}\))|\d{3})[-\s]?\d{3}[-\s]?\d{4}$/;
+
+    const ok = regex.test(userInput);
+
+    output.innerHTML = ok 
+    ? `<span> Valid US number: ${userInput} </span>`
+    : `<span> Invalid US number: ${userInput} </span>`;
+
+    document.forms["form"]["number-input"].value = "";
 }
 
 function clearBtn() {
@@ -24,13 +30,12 @@ function clearBtn() {
 }
 
 function formEmpty() {
-    if (document.forms["form"]["number input"].value === ""){
+    if (document.forms["form"]["number-input"].value === ""){
         alert("Please provide a phone number");
         return true;
     }
     return false;
 }
-
 
 checkButton.addEventListener("click", checkBtn);
 clearButton.addEventListener("click", clearBtn);
