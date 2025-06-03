@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fCC Forum Leaderboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">RPG Creature Search App</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Search for Creature Name or ID</h2>
+            <div class="input-button-group">
+                <input id="search-input" type="text" required="true"></input>
+                <button id="search-button">Search</button>
+            </div>
+            <div id="creature-informations" class="informations">
+                <div id="name-id">
+                    <span id="creature-name"></span>
+                    <span id="creature-id"></span>
+                </div>
+                <div id="weight-height">
+                    <span id="weight"></span>
+                    <span id="height"></span>
+                </div>
+                <div id="elements">
+                    <span id="types"></span>
+                </div>
+                <div id="special-ability-info">
+                    <span id="special-name"></span>
+                    <p id="special-description"></p>
+                </div>
+            </div>
+            <div id="creature-stats" class="stats">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th id="base" scope="col">Base</th>
+                            <th id="stats" scope="col">Stats</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th id="hp" scope="row">HP:</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th id="attack" scope="row">Attack:</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th id="defense" scope="row">Defense:</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th id="special-attack" scope="row">Sp. Attack:</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th id="special-defense" scope="row">Sp. Defense:</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th id="speed" scope="row">Speed:</th>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
